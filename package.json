@@ -1,0 +1,19 @@
+{ 
+  "name": "mcp-grok-supabase", 
+  "version": "1.0.0", 
+  "type": "module", 
+  "main": "src/index.js", 
+  "engines": { "node": ">=20" }, 
+  "scripts": { 
+    "start": "node src/index.js", 
+    "dev": "node --watch src/index.js", 
+    "teste:oauth": "node scripts/teste-oauth.mjs" 
+  }, 
+  "dependencies": { 
+    "@modelcontextprotocol/sdk": "^1.32.1", 
+    "@supabase/supabase-js": "^2.118.0", 
+    "dotenv": "^17.2.0", 
+    "express": "^5.3.0", 
+    "zod": "^3.25.0" 
+  } 
+} 

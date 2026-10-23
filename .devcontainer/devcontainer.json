@@ -1,0 +1,22 @@
+{ 
+  "name": "MCP Grok + Supabase", 
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm", 
+  "forwardPorts": [3000], 
+  "portsAttributes": { 
+    "3000": { "label": "Servidor MCP", "onAutoForward": "notify" } 
+  }, 
+  "postCreateCommand": "npm install", 
+  "secrets": { 
+    "SUPABASE_URL": { "description": "URL do projeto Supabase" }, 
+    "SUPABASE_SECRET_KEY": { "description": "Chave secreta (sb_secret_...) ou 
+service_role" }, 
+    "SUPABASE_PUBLISHABLE_KEY": { "description": "Chave publicável 
+(sb_publishable_...) ou anon" }, 
+    "OAUTH_CLIENT_ID": { "description": "ID do cliente OAuth que vais colar no Grok" 
+}, 
+ 
+ 
+    "OAUTH_CLIENT_SECRET": { "description": "Segredo do cliente OAuth que vais colar 
+no Grok" } 
+  } 
+} 
